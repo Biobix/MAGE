@@ -1,9 +1,9 @@
 library("MAGE")
 
-chromosomes <- c(21, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)
-wd_samples <- ""
-wd_seq <-  ""
-wd_res <- ""; if(!dir.exists(wd_res)) dir.create(wd_res)
+chromosomes <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)
+wd_samples <- "" #working directory with sample file
+wd_seq <-  "" #working directory with  count files
+wd_res <- ""; if(!dir.exists(wd_res)) dir.create(wd_res) #working directory for  imprinting results
 
 file_samples <- paste(wd_samples, "kidney_samples.txt", sep = "")
 file_sequences <- paste(wd_seq, "counts_SNP_chr", sep = "")
